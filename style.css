@@ -1,5 +1,11 @@
+
+
 body{
  
+}
+
+.tituloprincipal {
+  padding-left: 20px;
 }
 
 #banner {
@@ -9,9 +15,10 @@ body{
 
 .principal {
   background: #cccccc;
+  padding: 30px;
 }
 
-h1 {
+h2 {
 text-align: center;
 height: 150px;
 border: 10px solid;
@@ -43,7 +50,21 @@ em strong {
 
 .beneficios {
   background: #FFFFFF;
+  padding: 20px;
 }
-h2 {
+h3 {
   text-align: center;
+}
+
+ul {
+display: inline-block;
+/* display = funcao que permite que outras tags ocupem a msm linha*/
+vertical-align: top;
+/* vertical = funcao que puxa os elementos para o topo*/
+width: 20%;
+margin-right: 15%;
+}
+
+.imagembeneficios {
+ width: 50%;
 }
