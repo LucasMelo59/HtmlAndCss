@@ -1,10 +1,23 @@
 body{
+ 
+}
 
-  background-color: #cccccc"
+#banner {
+ width: 100%; 
+/* modificando a largura do elemento */
+}
+
+.principal {
+  background: #cccccc;
 }
 
 h1 {
 text-align: center;
+height: 150px;
+border: 10px solid;
+/* padding espaçamento interno*/
+
+/* margin utilizado para da espaçamento externo */
 }
 
 p {
@@ -12,7 +25,7 @@ p {
   text-align: center;
  
 }
-
+/* para identificar um id usasse: "#"*/
 #missao {
 
   font-size: 20px
@@ -21,4 +34,16 @@ p {
 em strong {
 
     color: red;
+}
+/* para identificar classes usassamos : "." */
+.itens {
+  /* Definindo o estilo do testo para italico sem usar a tag em */
+  font-style: italic;
+}
+
+.beneficios {
+  background: #FFFFFF;
+}
+h2 {
+  text-align: center;
 }

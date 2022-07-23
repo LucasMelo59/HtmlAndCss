@@ -1,7 +1,8 @@
 <!-- Definindo a versão do html -->
 <!DOCTYPE html>
+<!-- se faz importante colocar a tag html em todo o codigo pois nem todo navegador faz o preenchimento auto desta;-->
 <html lang="pt-br" >
- <!--Cabeçario onda todas as informações para o navegador sao carregadas -->
+ <!-- head- Cabeçario onda todas as informações para o navegador sao carregadas -->
   <head>
      <!--meta passa informações para o navegador , indicando o dicionario utf-8-->
     <meta charset="UTF-8">
@@ -14,29 +15,44 @@
   
   <!-- Body é o local onde são exibido essa informações-->
   <body>
+    <!--Id -> para itens unicos-->
+    <img id="banner" src="banner.jpg">
+    <div class="principal"  >
+          <!-- h vem de head. ou seja cabeçario e eexistem 3 tipos , titulo-->
+          <h1 >
+            <!--align alinha o texto na direção que for denifinida-->
+            Sobre a Barbearia.. 
+            </h1>
+            <!--// p para paragrafo--> 
+            <p  > 
+            Localizada no coração da cidade , a <strong>barbearia alura</strong> traz para o mercado o melhor que há de melhor 
+            </p>
+            <!--<p style="font-size: 20px; text-align: center"> outro modelo de uso-->
+            <p id="missao" >
+              <!--em é a tag de enfase -->
+              <em>
+            Nossa missão é: <strong>"Proporcionar auto-estima"</strong>
+            </em>
+            </p>
+            <p >
+            Oferecemos profissionais muito competentes
+            </p>
+  </div>
+  <div class="beneficios" > 
+      <h2>Benefícios</h2>
 
-    <img src="banner.jpg">
+      <ul>
+        <!--ul->unoread list-->
+      <li class="itens">Atendimento aos Clientes</li>
+      <!--li-> precisamos marcar os itens da lista com tag li de list item -->
+        <li class="itens">Espaço diferenciado</li>
+        <!--O termo class é bastante util quando queremos fazer marcações especificas em lugares diferentes, sem alterar outros, somente aqueles que possuem nome de class pareciada-->
+        <li class="itens">Localização</li>
+        <li class="itens">Profissionais Qualificados</li>
+      </ul>
 
-  <!-- h vem de head. ou seja cabeçario e eexistem 3 tipos , titulo-->
-  <h1 >
-    <!--align alinha o texto na direção que for denifinida-->
-    Sobre a Barbearia.. 
-    </h1>
-    <!--// p para paragrafo--> 
-    <p  > 
-    Localizada no coração da cidade , a <strong>barbearia alura</strong> traz para o mercado o melhor que há de melhor 
-    </p>
-    <!--<p style="font-size: 20px; text-align: center"> outro modelo de uso-->
-    <p id="missao" >
-      <!--em é a tag de enfase -->
-      <em>
-    Nossa missão é: <strong>"Proporcionar auto-estima"</strong>
-    </em>
-    </p>
-    <p >
-    Oferecemos profissionais muito competentes
-    </p>
-
+    <img src="beneficios.jpg">
+  </div>
   </body>
   
 
