@@ -31,10 +31,98 @@ nav a {
 
 }
 
+/* hover ee um comando utiliza (mapeamento) para dizer : quando o mouse estiver em cima da tag "a" em "nav" faça isso */
+
+nav a:hover {
+
+  color: blue;
+  text-decoration: underline;
+
+}  
+
 nav {
 
   position: absolute;
   /* mudando o posicionamento geral dos itens de nav */
   top: 110;
   right: 0;
+}
+
+.produtos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50%;
+
+}
+
+.produtos li{
+
+  display: inline-block;
+  /* Com o tamanho do seu conteúdo, mas regulável */
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  /* vertical aling foi usado pq o inline block alinha usando a linha de baixo e queriamos alinhar com a linha de cima */
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  /* mexendo com a bordar */
+  border-color:#000000 ;
+  border-width: 2px ;
+  border-style: solid;
+  border-top: 10px;
+ /* ou border: 2px solid #000000 */
+ /*Na estrutura de "caixas" do CSS, a borda fica posicionada entre o padding e a margin */
+border-radius: 10px;
+/* com border radius fazemos o arendondamento das bordas dx elas com 10 px mas também podemos personalizar e dx os cantos com medidas diferentes */
+/* exemplo border-radius: 10px 20px 30px 40px; */
+}
+
+.produtos li:hover {
+  border-color: blue;
+
+}
+/* active é evento realizados com click do mouse */
+.produtos li:active {
+  border-color: green;
+}
+/* quando o mouse estiver por cima do li , faça alterações no h2 : */
+.produtos li:hover h2 {
+  font-size: 34px;
+
+}
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.produto-preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0 0;
+  /* ou margin-top: 10px*/
+}
+
+.produto-descricao {
+
+  font-size: 18px;
+}
+
+
+footer {
+
+  text-align: center;
+  /* usando imagens de fundo, sempre que utilizarmos uma imagem mesmo que pequena o css faz o trabalho de replicar esta e preencher a coluna */
+  background-image: url("bg.jpg");
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #bbbbbb;
+  
+  font-size: 13px;
+
+  /* usando margin aq para distanciar este item do item acima dele */
+  margin: 20 px 0 0;
 }
