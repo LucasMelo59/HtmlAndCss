@@ -1,14 +1,21 @@
 header {
 
   background-color: #bbbbbb;
+  padding: 20 px 0;
+  /* utilizando espaçamento interno */
 }
-
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+  /* utiliza a configuração auto, para que a caixa fique centralizada independente do tamanho da tela */
+}
 nav li {
 
   display: inline;
   /*troca o display da tag que antes era em block e cobria uma linha inteira */
   margin: 0 0 0 15 px;
-  /* a margem segue o padrão height,weight,right,left*/
+  /* a margem segue o padrão height,width,right,left*/
 }
 
 nav a {
@@ -22,4 +29,12 @@ nav a {
   text-decoration: none;
   /* definindo que não queremos derocação no texto, tirando o sublinhado que o href da a ele */
 
+}
+
+nav {
+
+  position: absolute;
+  /* mudando o posicionamento geral dos itens de nav */
+  top: 110;
+  right: 0;
 }
