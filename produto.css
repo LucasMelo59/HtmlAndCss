@@ -1,0 +1,25 @@
+header {
+
+  background-color: #bbbbbb;
+}
+
+nav li {
+
+  display: inline;
+  /*troca o display da tag que antes era em block e cobria uma linha inteira */
+  margin: 0 0 0 15 px;
+  /* a margem segue o padrão height,weight,right,left*/
+}
+
+nav a {
+
+  text-transform: uppercase;
+  /* transformando todo o texto em maiusculo*/
+  color: #000000;
+  font-weight: bold;
+  /* mudando o peso da font para "em negrito" */
+  font-size: 22px;
+  text-decoration: none;
+  /* definindo que não queremos derocação no texto, tirando o sublinhado que o href da a ele */
+
+}
