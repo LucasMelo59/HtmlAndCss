@@ -1,7 +1,7 @@
 header {
 
   background-color: #bbbbbb;
-  padding: 20 px 0;
+  padding: 20px 0;
   /* utilizando espaçamento interno */
 }
 .caixa {
@@ -44,14 +44,14 @@ nav {
 
   position: absolute;
   /* mudando o posicionamento geral dos itens de nav */
-  top: 110;
+  top: 110PX;
   right: 0;
 }
 
 .produtos {
   width: 940px;
   margin: 0 auto;
-  padding: 50%;
+  padding: 50px 0;
 
 }
 
@@ -114,7 +114,7 @@ footer {
 
   text-align: center;
   /* usando imagens de fundo, sempre que utilizarmos uma imagem mesmo que pequena o css faz o trabalho de replicar esta e preencher a coluna */
-  background-image: url("bg.jpg");
+  background-color: #000000;
   padding: 40px 0;
 }
 
