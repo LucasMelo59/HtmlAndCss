@@ -126,3 +126,27 @@ footer {
   /* usando margin aq para distanciar este item do item acima dele */
   margin: 20 px 0 0;
 }
+
+/* centralizando os input */
+main {
+  width: 940px;
+  margin: 0 auto;
+
+}
+/* dispositivo inline-> ocupa apenas o tamanho do seu conteudo/ dispositivo em block -> ocupa a linha inteira; */
+form {
+margin: 40px 0;
+
+}
+
+form label {
+  display: block;
+  font-size: 20px;
+  /* margem pra baixo de 10px */
+  margin: 0 0 10px;
+}
+
+form input {
+  display: block;
+  margin: 0 0 20px;
+}
