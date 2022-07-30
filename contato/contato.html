@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contato da barbearia</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title> Contato da barbearia </title>
-    <link rel = "stylesheet" href="reset.css">
-    <link rel = "stylesheet" href="style.css">
-</head>
-
-<body>
-  <header>
-    <div class="caixa" >
-      <h1><img src="logo.png"></h1> 
+  <body>
+    <header>
+      <div class="caixa">
+        <h1><img src="img/logo.png" /></h1>
         <nav>
           <ul>
             <!-- lista nao ordenada-->
-            <li><a href="./home/index.html" >Home</a></li>
-            <li><a href="produto.html" >produtos</a></li>
-            <li><a href="contato/contato.html" >Contato</a></li>
+            <li><a href="./home/index.html">Home</a></li>
+            <li><a href="produto.html">produtos</a></li>
+            <li><a href="contato/contato.html">Contato</a></li>
           </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <!--criando um formulario usando form-->
-    <form>
-      <!--Label e input sempre andando juntos no recebimento de dados-->
-      <label for="nomesobrenome" >Nome e Sobrenome</label>
-      <!--Usando o id e o for para que ao clickar no na label a caixa de texto tmb se abra-->
-      <input type="text" id="nomesobrenome" >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!--criando um formulario usando form-->
+      <form>
+        <!--Label e input sempre andando juntos no recebimento de dados-->
+        <label for="nomesobrenome">Nome e Sobrenome</label>
+        <!--Usando o id e o for para que ao clickar no na label a caixa de texto tmb se abra-->
+        <input type="text" id="nomesobrenome" />
 
-      <label for="email" >Email</label>
-      <input type="text" id="email">
+        <label for="email">Email</label>
+        <input type="text" id="email" />
 
-      <label for="telefone" >Telefone</label>
-      <input type="text" id="telefone">
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" />
+        
+        <label>Mensagem</label>
+        <textarea cols="70" rows="10" ></textarea>
 
-      <input type="submit" value="Enviar Formulário">
-    </form>
+        <!---->
+        <div>
+        <p>Como prefere o nosso contato?</p>
+        <label for="radio-email" >Email</label>
+         <input type="radio" name="contato" value="email" id="radio-email"> 
 
-  </main>
+         <label for="radio-telefone">Telefone</label>
+          <input type="radio" name="contato" value="telefone" id="radio-telefone">
+        <!--usando a função name para que os 3 inputs façam parte do mesmo grupo, dessa forma quando um for marcado o outro sera desmarcado -->
+          <label for="radio-whatsapp">Whats App</label>
+          <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+        </div>
 
-  <footer>
-    <img src="logo-branco.png">
-    <!--&copy -> codigo unicode usando entidade; s caracteres Unicode estão disponíveis para serem usados como um complemento ao nosso texto-->
-    <p class="copyright" > &copy; copyright Barbearia</p>
-  </footer>
 
+        <label><input type="checkbox" >Gostaria de receber nossas novidades</label>
+          
+         <input type="submit" value="Enviar Formulário">
+      </form>
+    </main>
+
+    <footer>
+      <img src="img/logo-branco.png" />
+      <!--&copy -> codigo unicode usando entidade; s caracteres Unicode estão disponíveis para serem usados como um complemento ao nosso texto-->
+      <p class="copyright">&copy; copyright Barbearia</p>
+    </footer>
   </body>
-  </html>
+</html>

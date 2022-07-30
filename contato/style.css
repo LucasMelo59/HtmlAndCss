@@ -149,4 +149,7 @@ form label {
 form input {
   display: block;
   margin: 0 0 20px;
+  /*A propriedade padding serve para alterarmos o espaçamento interno, entre o conteúdo e a borda.*/
+  padding: 10px 25px;
+  width: 50%;
 }
