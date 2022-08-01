@@ -139,17 +139,61 @@ margin: 40px 0;
 
 }
 
-form label {
+form label, form legend {
   display: block;
   font-size: 20px;
   /* margem pra baixo de 10px */
   margin: 0 0 10px;
 }
-
-form input {
+/* adicionando a vircula, o vem a pos ela tera as mesma configurações do que antecede a virgula */
+.input-padrao {
   display: block;
   margin: 0 0 20px;
   /*A propriedade padding serve para alterarmos o espaçamento interno, entre o conteúdo e a borda.*/
   padding: 10px 25px;
   width: 50%;
+}
+
+.checkbox {
+  /* dando uma margem de 20px em cima e em baixo */
+margin: 20px 0;
+
+}
+
+.enviar {
+
+  width: 40%;
+  padding: 15px 0 ;
+background: orange;
+color: white;
+font-weight: bold;
+font-size: 18px;
+border: none;
+border-radius: 5px;
+/* adicionando transição a mudança de cor fica mais sutil e demora mais um pouco, a propriedade transition  prove uma transição visual de um elemento. */
+transition: 1s all;
+/*definindo assim q o botao é clicavel transformando a seta em maozinha */
+cursor: pointer;
+}
+
+.enviar:hover {
+  background: darkorange;
+  /* utlizando o trasnform mais scale para que assim q o mouse estiver em cima do botao o botão aumente em 20% */
+  transform: scale(1.2);
+
+
+}
+table {
+  margin: 20px 0 40px;
+}
+
+thead {
+  background-color: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  border: 1px solid #000000;
+  padding: 8px 15px ;
 }

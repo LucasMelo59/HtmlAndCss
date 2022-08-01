@@ -27,35 +27,71 @@
         <!--Label e input sempre andando juntos no recebimento de dados-->
         <label for="nomesobrenome">Nome e Sobrenome</label>
         <!--Usando o id e o for para que ao clickar no na label a caixa de texto tmb se abra-->
-        <input type="text" id="nomesobrenome" />
-
+        <input type="text" id="nomesobrenome" class="input-padrao" required  placeholder="seuemail@hotmail.com" />
+        <!-- utilizando required na tag input tornamos obrigados o preenchimento desse campo-->
         <label for="email">Email</label>
-        <input type="text" id="email" />
-
+        <input type="email" id="email" class="input-padrao" required placeholder="(xx)xxxxx-xxxx" />
+        <!-- place holder abre uma sugestão de preenchimento que desaparece quando o usuário começa a preencher o campo-->
         <label for="telefone">Telefone</label>
-        <input type="text" id="telefone" />
+        <input type="tel" id="telefone" class="input-padrao" required />
         
         <label>Mensagem</label>
         <textarea cols="70" rows="10" ></textarea>
 
         <!---->
-        <div>
-        <p>Como prefere o nosso contato?</p>
-        <label for="radio-email" >Email</label>
-         <input type="radio" name="contato" value="email" id="radio-email"> 
-
-         <label for="radio-telefone">Telefone</label>
-          <input type="radio" name="contato" value="telefone" id="radio-telefone">
+        <fieldset>
+          <!--legend é a tag usando para se referir ao titulo-->
+        <legend >Como prefere o nosso contato?</legend>
+        <label for="radio-email" ><input type="radio" name="contato" value="email" id="radio-email">  Email</label>
+         
+          <!-- A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo somente um selecionado.-->
+         <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+         
         <!--usando a função name para que os 3 inputs façam parte do mesmo grupo, dessa forma quando um for marcado o outro sera desmarcado -->
-          <label for="radio-whatsapp">Whats App</label>
-          <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
-        </div>
-
-
-        <label><input type="checkbox" >Gostaria de receber nossas novidades</label>
+          <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whats App</label>
           
-         <input type="submit" value="Enviar Formulário">
+        </fieldset>
+        <fieldset>
+        <legend>Qual o horário</legend>
+        <select>
+          <option>manhã</option>
+          <option>tarde</option>
+          <option>noite</option>
+        </select>
+        </fieldset>
+        <label class="checkbox" ><input type="checkbox" >Gostaria de receber nossas novidades</label>
+          
+         <input type="submit" value="Enviar Formulário" class="enviar">
       </form>
+
+      <table>
+        <!--tr -> table row ou seja linhas da tabela-->
+        <!--thead é o cabeçario da tabela-->
+        <thead>
+        <tr>
+          <!--th é a tag para o cabeçario-->
+          <th>Dia</th>
+          <th>Horário</th>
+        </tr>
+      </thead>
+      <!--tbody é onde fica o corpo da tabela
+      -->
+      <tbody>
+        <tr>
+          <!--Utilizamos a tag <td> para marcar uma coluna de uma tabela.-->
+          <td>Segunda</td>
+          <td>8h ~ 20h </td>
+        </tr>
+        <tr>
+          <td>Quarta</td>
+          <td>8h ~ 20h</td>
+        </tr>
+        <tr>
+          <td>Sexta</td>
+          <td>8h ~ 20h</td>
+        </tr>
+      </tbody>
+      </table>
     </main>
 
     <footer>
